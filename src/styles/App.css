@@ -1,0 +1,33 @@
+body{
+    background-color: #C0C0C0;
+}
+
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.header h1{
+    padding: 5rem;
+    color: #232b2b;    ;
+    font-size: 5rem;
+}
+
+.set-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5rem;
+}
+
+
+@import '~antd/dist/antd.css';
