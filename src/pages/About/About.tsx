@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import '../styles/App.css';
+import '../../styles/App.css';
+import styles from './About.module.css'
 import { Button, Col, Row, notification } from 'antd';
 import 'antd/dist/antd.css';
-import HeaderText from '../components/HeaderText'
+import HeaderText from '../../components/HeaderText'
 
 const About: React.FC = () => {
     const [submitLoading, submitSetLoading] = useState<boolean>(false);
@@ -41,7 +42,7 @@ const About: React.FC = () => {
 
             <Row gutter={[8, 8]}>
                 <Col span={12}>
-                    <div className="button">
+                    <div className={styles.button}>
                         <Button type="primary" loading={submitLoading} onClick={onSubmitClick}>
                             Submit
                             </Button>
@@ -49,7 +50,7 @@ const About: React.FC = () => {
                 </Col>
 
                 <Col span={12}>
-                    <div className="button">
+                    <div className={styles.button}>
                         <Button danger loading={cancelLoading} onClick={onCancelClick}>
                             Cancel
                             </Button>

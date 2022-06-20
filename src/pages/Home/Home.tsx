@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import '../styles/App.css'
+import '../../styles/App.css'
+import styles from './Home.module.css'
 import { Button, Col, Row, notification } from 'antd';
 import 'antd/dist/antd.css';
-import HeaderText from '../components/HeaderText'
+import HeaderText from '../../components/HeaderText'
 
 const Home: React.FC = () => {
 
@@ -43,7 +44,7 @@ const Home: React.FC = () => {
 
             <Row gutter={[8, 8]}>
                 <Col span={12}>
-                    <div className="button">
+                    <div className={styles.button}>
                         <Button type="primary" loading={submitLoading} onClick={onSubmitClick}>
                             Submit
                         </Button>
@@ -51,7 +52,7 @@ const Home: React.FC = () => {
                 </Col>
 
                 <Col span={12}>
-                    <div className="button">
+                    <div className={styles.button}>
                         <Button danger loading={cancelLoading} onClick={onCancelClick}>
                             Cancel
                         </Button>

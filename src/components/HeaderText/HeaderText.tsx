@@ -1,5 +1,6 @@
 import React from 'react';
-import '../styles/App.css';
+import '../../styles/App.css';
+import styles from './HeaderText.module.css'
 
 interface IHeaderTextProps {
     title: string
@@ -7,7 +8,7 @@ interface IHeaderTextProps {
 
 const HeaderText = ({ title }: IHeaderTextProps) => {
     return (
-        <div className='header'>
+        <div className={styles.header}>
             <h1>{title}</h1>
         </div>
     )
